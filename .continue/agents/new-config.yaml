@@ -1,0 +1,31 @@
+name: Example Config
+version: 1.0.0
+schema: v1
+
+models:
+ 
+
+  # ✅ Added local Ollama models
+  - name: qwen3.5-4b
+    provider: ollama
+    model: qwen3.5:4b
+    roles:
+      - autocomplete
+      - chat
+      - edit
+
+  - name: qwen3-8b
+    provider: ollama
+    model: qwen3:8b
+    roles:
+      - autocomplete
+      - chat
+      - edit
+
+  - name: qwen2.5-coder-7b-local
+    provider: ollama
+    model: qwen2.5-coder:7b
+    roles:
+      - autocomplete
+      - chat
+      - edit
